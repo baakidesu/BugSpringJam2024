@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        
         if(Input.GetMouseButtonDown(0))
         {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);

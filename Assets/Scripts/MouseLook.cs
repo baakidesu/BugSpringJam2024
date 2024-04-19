@@ -24,7 +24,7 @@ public class MouseLook : MonoBehaviour
         xRot -= rotY;
         xRot = Mathf.Clamp(xRot, -80f, 80f);
         
-        transform.localRotation = Quaternion.Euler(xRot,0f,0f);
+        transform.localRotation = Quaternion.Euler(xRot,0f,0f); 
 
         body.Rotate(Vector3.up * rotX);
     }
