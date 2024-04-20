@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
         #region Teleport
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
             player.transform.position = Bullet.lastBulletPosition;
 
