@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8448880736426335322}
   - component: {fileID: 8723257803270383742}
   - component: {fileID: 7926719538695650106}
-  - component: {fileID: -828331620196694177}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Death
@@ -69,18 +68,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteor: {fileID: 1917267139878161524}
---- !u!114 &-828331620196694177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2601734327456645294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eabac4d9185baa242b95ef021acc876a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7678037231360851486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89,17 +76,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8448880736426335322}
     m_Modifications:
-    - target: {fileID: -5976894700773794380, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
-      propertyPath: m_Mass
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 8076746750973129322, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
       propertyPath: m_Name
       value: Meteor (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8076746750973129322, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8889418247166453968, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
       propertyPath: m_LocalPosition.x
@@ -141,21 +120,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 114.388
       objectReference: {fileID: 0}
-    - target: {fileID: 8932384310743997948, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
-      propertyPath: forceX
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 8932384310743997948, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
-      propertyPath: forceZ
-      value: 120
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8076746750973129322, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 57552007337578424}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
 --- !u!4 &1283614828099262158 stripped
 Transform:
@@ -167,15 +135,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8076746750973129322, guid: 78d3652975f083b4790294ee97ca7403, type: 3}
   m_PrefabInstance: {fileID: 7678037231360851486}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &57552007337578424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917267139878161524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eabac4d9185baa242b95ef021acc876a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
