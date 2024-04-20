@@ -7,8 +7,16 @@ public class Bullet : MonoBehaviour
 {
     public static Vector3 lastBulletPosition;
     public float maxDistance = 10f;
+    private Rigidbody rb;
 
     private float travelled;
+
+    public float rotateSpeed;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void Update()
     {
@@ -18,7 +26,8 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
-     
+        transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
+        
     }
 
     private void OnCollisionEnter(Collision other)
