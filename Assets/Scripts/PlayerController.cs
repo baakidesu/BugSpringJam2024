@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = transform.right * horizantal + transform.forward * vertical;
         controller.Move(move * speed * Time.deltaTime);
+        transform.localRotation = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+
 
         #endregion
 

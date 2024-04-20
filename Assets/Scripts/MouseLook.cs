@@ -1,31 +1,23 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseLook : MonoBehaviour
+public class mouseLook : MonoBehaviour
 {
-    [Range(5, 50)] public float sens;
-
-    public Transform body;
-
-    private float xRot = 0f;
+    public Vector2 turn;
+    public float sensitivity = .5f;
+    public Vector3 deltaMove;
+    public float speed = 1;
     void Start()
     {
-         Cursor.lockState = CursorLockMode.Locked;
-         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
-
     void Update()
     {
-        float rotX = Input.GetAxis("Mouse X") * sens;
-        float rotY = Input.GetAxis("Mouse Y") * sens;
+        turn.x += Input.GetAxis("Mouse X") * sensitivity;
+        turn.y += Input.GetAxis("Mouse Y") * sensitivity;
 
-        xRot -= rotY;
-        xRot = Mathf.Clamp(xRot, -80f, 80f);
-        
-        transform.localRotation = Quaternion.Euler(xRot,0f,0f); 
-
-        body.Rotate(Vector3.up * rotX);
+        turn.y = Mathf.Clamp(turn.y, -80f, 80f) ;
+        transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
     }
 }
