@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour
     
 
     public Transform ground;
-    public Transform characterTransform;
+    public GameObject player;
     public float distance = 0.3f;
 
     public LayerMask mask;
@@ -65,10 +66,28 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            characterTransform.position = Bullet.lastBulletPosition;
+            player.transform.position = Bullet.lastBulletPosition;
 
         }
 
         #endregion
+        
     }
+
+ 
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    
 }

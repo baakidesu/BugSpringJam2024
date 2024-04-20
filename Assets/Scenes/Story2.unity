@@ -248,8 +248,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: One time, he did something wrong and went to another dimension. Now, he
-    is trying to escape there!!
+  m_text: One time, he made a mistake and went to another dimension. Now, he is trying
+    to escape there!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a5d424c0da0ff424ca5fcb4d3daedab5, type: 2}
   m_sharedMaterial: {fileID: -1649503436334225673, guid: a5d424c0da0ff424ca5fcb4d3daedab5, type: 2}

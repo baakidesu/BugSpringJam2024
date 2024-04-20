@@ -7,7 +7,7 @@ public class Gun : MonoBehaviour
 {
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
-    public float bulletSpeed = 10f;
+    public static float bulletSpeed = 10f;
 
 
     void Update()
@@ -19,5 +19,6 @@ public class Gun : MonoBehaviour
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
 
         }
+       
     }
 }
