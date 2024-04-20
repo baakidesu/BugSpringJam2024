@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6410296428640745354}
   m_Layer: 6
   m_Name: rock.003
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3234763060736249239}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.68546796, y: 0.064006686, z: -0.1479149, w: 0.7100408}
+  m_LocalRotation: {x: -0.685468, y: 0.06400555, z: -0.14791629, w: 0.7100407}
   m_LocalPosition: {x: -38.4, y: -2.1, z: 6.83}
-  m_LocalScale: {x: 148.03763, y: 195.40427, z: 148.03761}
+  m_LocalScale: {x: 373.74344, y: 277.47406, z: 214.80257}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -72.647, y: 79.945, z: -86.827}
 --- !u!33 &6113853947302964028
 MeshFilter:
   m_ObjectHideFlags: 0

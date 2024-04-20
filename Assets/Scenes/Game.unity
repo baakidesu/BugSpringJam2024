@@ -878,18 +878,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1256488900}
     m_Modifications:
     - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7888999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7789992
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.018066864
       objectReference: {fileID: 0}
@@ -1591,6 +1579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510b7645e7f4a274380b43d0a6701cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1447478344}
   speed: 5
   gravity: -9.8
   jumpHeight: 2
@@ -1909,18 +1898,6 @@ PrefabInstance:
       value: rock.003
       objectReference: {fileID: 0}
     - target: {fileID: 7640528104167805942, guid: 692ca84c3b5c9bf4d9d42b896ba721f1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 373.74344
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640528104167805942, guid: 692ca84c3b5c9bf4d9d42b896ba721f1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 277.47406
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640528104167805942, guid: 692ca84c3b5c9bf4d9d42b896ba721f1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 214.80257
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640528104167805942, guid: 692ca84c3b5c9bf4d9d42b896ba721f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.462635
       objectReference: {fileID: 0}
@@ -2047,7 +2024,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 13fb6966f337c814496d304b99ea1fc5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1447478342}
+      addedObject: {fileID: 1447478345}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 13fb6966f337c814496d304b99ea1fc5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1447478344}
   m_SourcePrefab: {fileID: 100100000, guid: 13fb6966f337c814496d304b99ea1fc5, type: 3}
 --- !u!4 &1229610005 stripped
 Transform:
@@ -2247,6 +2227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10111f22353e7bd4ab6cbfad0fe831cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1447478344}
   bulletSpawnPoint: {fileID: 1276128614}
   bulletPrefab: {fileID: 8468991280161096708, guid: 636191c32480c1c49a83edc662f3e0e7, type: 3}
 --- !u!1001 &1289305828
@@ -2329,18 +2310,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1256488900}
     m_Modifications:
-    - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7889001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7789992
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2636757444220050774, guid: d8790a95d2961db43a5445ffc0aa028e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.010684158
@@ -2469,7 +2438,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 13fb6966f337c814496d304b99ea1fc5, type: 3}
   m_PrefabInstance: {fileID: 1173780250}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1447478342
+--- !u!4 &1447478343 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13fb6966f337c814496d304b99ea1fc5, type: 3}
+  m_PrefabInstance: {fileID: 1173780250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1447478344
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -2490,11 +2464,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &1447478343 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13fb6966f337c814496d304b99ea1fc5, type: 3}
-  m_PrefabInstance: {fileID: 1173780250}
+--- !u!114 &1447478345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447478341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10111f22353e7bd4ab6cbfad0fe831cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1447478344}
+  bulletSpawnPoint: {fileID: 1276128614}
+  bulletPrefab: {fileID: 8468991280161096708, guid: 636191c32480c1c49a83edc662f3e0e7, type: 3}
 --- !u!1001 &1626010595
 PrefabInstance:
   m_ObjectHideFlags: 0

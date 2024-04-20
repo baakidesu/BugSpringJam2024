@@ -4,7 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
-{
+{ 
+    
+    public Animator animator;
+    
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public static float bulletSpeed = 10f;
@@ -16,9 +19,7 @@ public class Gun : MonoBehaviour
         {
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
-            
-            
-            
+            animator.SetTrigger("Shoot");
             
         }
        

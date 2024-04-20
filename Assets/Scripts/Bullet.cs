@@ -23,7 +23,11 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log(other);
         lastBulletPosition = transform.position;
-        Destroy(gameObject);
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

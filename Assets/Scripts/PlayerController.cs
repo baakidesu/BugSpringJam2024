@@ -4,8 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerController : MonoBehaviour
 {
+
+    public Animator animator;
     private CharacterController controller;
     private Vector3 velocity;
     
@@ -15,8 +18,6 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded;
     
-    
-
     public Transform ground;
     public GameObject player;
     public float distance = 0.3f;
@@ -60,6 +61,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             velocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
+            
         }
         
         #endregion
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             player.transform.position = Bullet.lastBulletPosition;
-
+            animator.SetTrigger("Teleport");
         }
 
         #endregion
