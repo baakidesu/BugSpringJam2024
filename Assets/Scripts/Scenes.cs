@@ -14,5 +14,9 @@ public class Scenes : MonoBehaviour
   {
       Application.Quit();
   }
-  
+
+  public void ForcePlay()
+  {
+      SceneManager.LoadScene(3);
+  }
 }
