@@ -180,8 +180,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ege Dizdar -  D Artist\nEfe Can Ayd\u0131n -  D Artist\nEce D\xF6nmez
-    -  D Artist\nBar\u0131\u015F Ba\u015Faran - Developer / Game Designer\nBurak
+  m_text: "Ege Dizdar -  3D Artist\nEfe Can Ayd\u0131n -  3D Artist\nEce D\xF6nmez
+    -  2D Artist\nBar\u0131\u015F Ba\u015Faran - Developer / Game Designer\nBurak
     Foto - Developer / Game Designer / Level Designer\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5589b878297199e43a72b09d19a266eb, type: 2}
