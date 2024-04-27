@@ -10,7 +10,7 @@ public class Win : MonoBehaviour
     {
         if (other.tag=="Player")
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(3);
         }
     }
 }

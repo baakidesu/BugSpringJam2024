@@ -6,8 +6,6 @@ public class mouseLook : MonoBehaviour
 {
     public Vector2 turn;
     public float sensitivity = .5f;
-    public Vector3 deltaMove;
-    public float speed = 1;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;

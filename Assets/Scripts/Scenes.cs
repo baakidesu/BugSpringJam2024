@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,26 @@ public class Scenes : MonoBehaviour
 {
     public GameObject panel;
     public GameObject mainMenu;
-  public void PlayGame()
-  {
-      SceneManager.LoadScene(1);
-  }
+    public GameObject story1;
+    public GameObject story2;
+    
+    private float currentTime;
+
+
+    private bool story2Work;
+
+    private void Update()
+    {
+        currentTime += Time.deltaTime;
+        //Debug.Log(currentTime);
+    }
+
+    public void PlayGame()
+    { 
+        currentTime = 0f;
+      mainMenu.SetActive(false);
+      story1.SetActive(true);
+    }
 
   public void Exit()
   {
@@ -19,7 +36,7 @@ public class Scenes : MonoBehaviour
 
   public void ForcePlay()
   {
-      SceneManager.LoadScene(3);
+      SceneManager.LoadScene(1);
   }
  
     
@@ -33,5 +50,12 @@ public class Scenes : MonoBehaviour
   {
       panel.SetActive(false);
       mainMenu.SetActive(true);
+  } 
+  public void storyChange()
+  {
+      story1.SetActive(false);
+      story2.SetActive(true);
   }
+
+
 }

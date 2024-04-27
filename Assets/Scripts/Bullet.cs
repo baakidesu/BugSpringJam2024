@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+  
     public static Vector3 lastBulletPosition;
     public float maxDistance = 10f;
     private Rigidbody rb;
-
+    
     private float travelled;
-
     public float rotateSpeed;
 
     private void Start()
@@ -32,10 +32,11 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log(other);
+        //Debug.Log(other);
         lastBulletPosition = transform.position;
         if (other.gameObject.CompareTag("Ground"))
         {
+            //CamShake.Instance.Shake();
             Destroy(gameObject);
         }
     }

@@ -8,7 +8,7 @@ public class Gun : MonoBehaviour
     public Animator animator;
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
-    public static float bulletSpeed = 10f;
+    public static float bulletSpeed = 20f;
 
     public float cooldownTime = 0.5f; // Atışlar arasındaki bekleme süresi
     private bool canShoot = true; // Atış yapılabilir durum
