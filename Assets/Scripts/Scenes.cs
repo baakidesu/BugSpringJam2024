@@ -10,11 +10,14 @@ public class Scenes : MonoBehaviour
     public GameObject mainMenu;
     public GameObject story1;
     public GameObject story2;
+    public TryAgain scriptableObject;
+
     
     private float currentTime;
 
 
     private bool story2Work;
+    
 
     private void Update()
     {
@@ -37,6 +40,10 @@ public class Scenes : MonoBehaviour
   public void ForcePlay()
   {
       SceneManager.LoadScene(1);
+  }
+  public void TryAgain()
+  {
+      SceneManager.LoadScene(scriptableObject.previousScene);
   }
  
     

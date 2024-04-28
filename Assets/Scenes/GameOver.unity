@@ -302,7 +302,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1231289137}
         m_TargetAssemblyTypeName: Scenes, Assembly-CSharp
-        m_MethodName: ForcePlay
+        m_MethodName: TryAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -896,6 +896,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
   mainMenu: {fileID: 0}
+  story1: {fileID: 0}
+  story2: {fileID: 0}
+  scriptableObject: {fileID: 11400000, guid: aab6588927c76234f879da61b4a6f162, type: 2}
 --- !u!4 &1231289138
 Transform:
   m_ObjectHideFlags: 0
