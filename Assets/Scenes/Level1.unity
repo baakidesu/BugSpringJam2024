@@ -298,6 +298,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 866290485763631116, guid: e7b5275ead48af94abffb58dbdd5f562, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d585cd3c32703947b76e2547456e436, type: 2}
     - target: {fileID: 1027166795601549056, guid: e7b5275ead48af94abffb58dbdd5f562, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.73
@@ -504,6 +508,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 866290485763631116, guid: e7b5275ead48af94abffb58dbdd5f562, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d585cd3c32703947b76e2547456e436, type: 2}
     - target: {fileID: 1027166795601549056, guid: e7b5275ead48af94abffb58dbdd5f562, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.54
@@ -616,6 +624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VPlatform2.005
       objectReference: {fileID: 0}
+    - target: {fileID: 7747666864789955703, guid: 827b31b58a125a74d8cf6e565f65e7fa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d585cd3c32703947b76e2547456e436, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Orb
+  m_Name: Grapple
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -79,6 +79,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.9245283, g: 0.45179778, b: 0.45179778, a: 1}
-    - _EmissionColor: {r: 5.442165, g: 0.130397, b: 0, a: 1}
+    - _Color: {r: 0, g: 0.34862614, b: 1, a: 1}
+    - _EmissionColor: {r: 0.57924896, g: 0.24031548, b: 1.6122444, a: 1}
   m_BuildTextureStacks: []

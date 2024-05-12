@@ -41,6 +41,10 @@ public class Scenes : MonoBehaviour
   {
       SceneManager.LoadScene(1);
   }
+  public void Level1()
+  {
+      SceneManager.LoadScene(3);
+  }
   public void TryAgain()
   {
       SceneManager.LoadScene(scriptableObject.previousScene);
