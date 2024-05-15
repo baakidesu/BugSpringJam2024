@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
@@ -9,9 +8,12 @@ public class Gun : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public static float bulletSpeed = 20f;
+    public Image image;
 
-    public float cooldownTime = 0.5f; // Atışlar arasındaki bekleme süresi
+    public float cooldownTime = 1f; // Atışlar arasındaki bekleme süresi
     private bool canShoot = true; // Atış yapılabilir durum
+
+    private float cooldownTimer = 0f; // Bekleme süresi sayaç
 
     void Update()
     {
@@ -23,6 +25,17 @@ public class Gun : MonoBehaviour
             // Bekleme süresini başlat
             StartCoroutine(Cooldown());
         }
+
+        // Bekleme süresi sayaç kontrolü
+        if (cooldownTimer > 0)
+        {
+            cooldownTimer -= Time.deltaTime;
+            image.fillAmount = 1-(cooldownTimer / cooldownTime);
+        }
+        else
+        {
+            image.fillAmount = 1f;
+        }
     }
 
     void Shoot()
@@ -31,13 +44,18 @@ public class Gun : MonoBehaviour
         var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
         animator.SetTrigger("Shoot");
+        // Bekleme süresi sayaçını başlat
+        cooldownTimer = cooldownTime;
     }
 
     IEnumerator Cooldown()
     {
-        // Atış yapılabilir durumu false yap ve bekleyip tekrar true yap
+        // Atış yapılabilir durumu false yap
         canShoot = false;
+
+        // Bekleme süresi kadar bekleyip tekrar true yap
         yield return new WaitForSeconds(cooldownTime);
+
         canShoot = true;
     }
 }

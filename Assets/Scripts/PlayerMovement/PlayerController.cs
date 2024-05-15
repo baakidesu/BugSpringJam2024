@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public Image doublejumpindicator;
     public Animator animator;
     private CharacterController controller;
     private Vector3 velocity;
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded && velocity.y < 0)
         {
+            doublejumpindicator.enabled = true;
             velocity.y = 0f;
             canDoubleJump = true; // Yere temas ettiğinde çift zıplama yeteneğini yeniden etkinleştir
         }
@@ -62,14 +65,17 @@ public class PlayerController : MonoBehaviour
         {
             if (isGrounded) // Yerdeyken
             {
+                doublejumpindicator.enabled = true;
                 velocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity); // Normal zıplama
                 canDoubleJump = true; // Çift zıplamayı etkinleştir
+                
             }
             else if (canDoubleJump) // Havadayken ve çift zıplama yapılabilir durumdaysa
-            {
+            {  
                 velocity.y = 0f; // Hızı sıfırla
                 velocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity); // Çift zıplama
                 canDoubleJump = false; // Bir kez çift zıplama yapıldı
+                doublejumpindicator.enabled = false;
             }
         }
 
