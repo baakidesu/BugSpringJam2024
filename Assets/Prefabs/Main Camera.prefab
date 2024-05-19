@@ -47,6 +47,7 @@ MonoBehaviour:
   animator: {fileID: 1469103716615391332}
   bulletSpawnPoint: {fileID: 3308406527639634517}
   bulletPrefab: {fileID: 3650192554145348718, guid: f0278828382013c439a69a1dfe6afd1e, type: 3}
+  image: {fileID: 0}
   cooldownTime: 2
 --- !u!1 &5130237433269196040
 GameObject:
@@ -341,8 +342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a3acbc63554d447beb3233948fe8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turn: {x: 0, y: 0}
-  sensitivity: 4.7
+  sens: 5
+  body: {fileID: 0}
 --- !u!114 &5686392530683841652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,6 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510b7645e7f4a274380b43d0a6701cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doublejumpindicator: {fileID: 0}
   animator: {fileID: 1469103716615391332}
   speed: 5
   gravity: -9.8
